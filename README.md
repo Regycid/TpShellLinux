@@ -1,4 +1,4 @@
-# TpShellLinux                                                ![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Flivecampus.fr%2Fformations-numerique-informatique-digital%2F&psig=AOvVaw1NCxzrjXFNc0FazdQOjXV8&ust=1668897895436000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKCR36PnuPsCFQAAAAAdAAAAABAS)
+# TpShellLinux                                                ![alt text](https://prepeersstorage.blob.core.windows.net/academic/1_728_logo_87817c39-e063-48f2-9ca7-1b3a581d27e0.png?sp=rl&st=2021-12-31T17:23:57Z&se=2022-12-31T17:23:00Z&sv=2020-08-04&sr=c&sig=SDDHph6sgvvHddvrug4O1jhZy3LU1U78BVN%2BDJjRB5M%3D)
 
 Ensemble de scripts du tp final de Shell Linux.
 Il est nécessaire de lancer le script de gestion de Nginx en tant que Sudo pour qu'il fonctionne correctement.
