@@ -72,7 +72,7 @@ select op in "${ops[@]}"; do
 			apt dist-upgrade -y nginx
 		
 		elif [ -f /etc/redhat-release ]; then
-			yum remove nginx nginx-common nginx-core
+			yum update nginx nginx-common nginx-core
 		fi
 		break
             ;;
