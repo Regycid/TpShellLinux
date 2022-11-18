@@ -19,7 +19,7 @@ select op in "${ops[@]}"; do
 
 		elif [ -f /etc/redhat-release ]; then
 			echo -e "\033[0;32mInstallation des dépendences Redhat... \033[0m "
-			yum install -q pcre pcre-devel zlib zlib-devel openssl openssl-devel  -y 2>/dev/null >/dev/null;
+			yum install -q pcre pcre-devel zlib zlib-devel openssl openssl-devel  -y 2>/dev/null >/dev/null
 
 		fi
 			echo -e "\033[0;34mVersions de Nginx possibles : \033[0m "
@@ -65,13 +65,14 @@ select op in "${ops[@]}"; do
 		cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
 		
 		echo -e "\033[0;32mMise à jour... ! \033[0m "
-		add-apt-repository ppa:nginx/stable
 		
 		if [ -f /etc/debian_version ]; then
+			add-apt-repository ppa:nginx/stable
 			apt update
 			apt dist-upgrade -y nginx
 		
 		elif [ -f /etc/redhat-release ]; then
+			yum-config-manager --add-repo ppa:nginx/stable
 			yum update nginx nginx-common nginx-core
 		fi
 		break
