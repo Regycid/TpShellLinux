@@ -47,7 +47,6 @@ select op in "${ops[@]}"; do
 			echo -e "\033[0;32mCréation de fichiers systèmes et démmarage des services... \033[0m "
 			touch /lib/systemd/system/nginx.service
 			mksmd
-			rm /etc/nginx/nginx.conf.default
 			systemctl daemon-reload
 			/etc/init.d/apache2 stop
 			systemctl unmask nginx.service
