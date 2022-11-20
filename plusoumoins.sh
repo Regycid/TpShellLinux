@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 	read -p "Entre quoi ( minimum ) ? " min
-	read -p "Entre et quoi ( maximum ) ? " max
+	read -p "Et quoi ( maximum ) ? " max
 	num=$(shuf -i $min-$max -n 1)
 
 for((;;))  
